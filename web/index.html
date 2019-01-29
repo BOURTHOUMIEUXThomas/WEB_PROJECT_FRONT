@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Amatic+SC|Bad+Script|Clicker+Script|Dancing+Script|Lobster|Marck+Script|Meddon|Meie+Script|Petit+Formal+Script|Pinyon+Script|Princess+Sofia|Zeyada" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/img/sapple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+<link rel="manifest" href="./assets/img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>ProjetWeb</title>
+</head>
+<body>
+    <div style="text-align: center;" id="myModal" class="modal" role="dialog" >
+        <div class="modal-dialog3">
+          <div style="background-color : black;" class="modal-content" >
+            <div style="background-color : black;" class="modal-header">
+                <div style="background-color : black; margin-left: auto; margin-right: auto;" class="typeclass">
+                    <div style="color: white;" class="typewriter">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <h1 style="color: white; ">VENI, CESI, VICI. </h1>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                     
+                      <button type="button" class="btn btn-light textval" data-dismiss="modal">Welcome to Valhalla</button>
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </div>
+                  </div>	
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+  <div id="myModal" class="modal" role="dialog">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 style="align-content: center;" class="modal-title">Ce site utilise des cookies</h4>
+            </div>
+            <div class="modal-body">
+              <p>Ce site utilise des cookies pour son bon fonctionnement, si vous n'acceptez pas les cookies vous risquez d'alterer l'expérience de navigation et les options d'achats de la boutique.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="setCookie('cacceptation', 1, 30)">J'accepte les cookies</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('cacceptation', 0, 30)">Je n'accepte pas les cookies</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img style="margin-right : 10px;" src="./assets/img/logobde.png" width="50" alt="//">
+    <a style="font-family: 'Lobster', cursive;font-size : x-large;" class="navbar-brand" href="#">BDE Toulouse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boite à idée</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Photos</a>
+        </li> 
+        <li class="nav-item active">
+          <a class="nav-link" href="profil.html">Profil</a>
+        </li>      
+        <li class="nav-item active dropdown ">
+          <a class="nav-link dropdown-toggle" href="event.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Evènements
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="event.html">Weekend d'intégration</a>
+            <a class="dropdown-item" href="#">Weekend Ski</a>
+            <a class="dropdown-item" href="#">AfterWork</a>
+            <a class="dropdown-item" href="#">Soirées</a>
+            <a class="dropdown-item" href="#">Gala</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Remises de diplomes</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boutique</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+    <button class="btn btn-primary" onclick="document.getElementById('form').style.display='block'" style="width:auto;">Incription</button>
+    <button class="btn btn-primary" onclick="document.getElementById('modalLoginForm').style.display='block'" style="width:auto;">Se connecter</button>
+  </nav>
+  <main>
+   <article>
+    <div class="typeclass">
+      <div class="typewriter">
+        <h1> NOTRE SLOGAN : VENI, CESI, VICI. </h1>
+      </div>
+    </div>	
+    </article> 
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+        <div class="col-sm-9">
+          <section class="content-section" id="portfolio">
+            <div class="container">
+              <div class="content-section-heading text-center">
+                <h2>Les évènements du mois</h2>
+                <br>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <a class="portfolio-item" href="#">
+                    <span class="caption">
+                      <span class="caption-content">
+                          <span class="mb-0"><strong>Gala</strong></span>
+                      </span>
+                    </span>
+                    <img class="img-fluid" src="./assets/img/s3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-lg-6">
+                  <a class="portfolio-item" href="#">
+                    <span class="caption">
+                      <span class="caption-content">
+                          <span class="mb-0"><strong>WEI</strong></span>
+                    </span>
+                  </span>
+                  <img class="img-fluid" src="./assets/img/s1.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                  <span class="caption">
+                    <span class="caption-content">
+                        <span class="mb-0"><strong>WES</strong></span>
+                    </span>
+                  </span>
+                  <img class="img-fluid" src="./assets/img/s1.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                  <span class="caption">
+                    <span class="caption-content">
+                        <span class="mb-0"><strong>WEI</strong></span>
+                    </span>
+                  </span>
+                  <img class="img-fluid" src="./assets/img/s3.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                  <span class="caption">
+                    <span class="caption-content">
+                        <span class="mb-0"><strong>WEI</strong></span>
+                    </span>
+                  </span>
+                  <img class="img-fluid" src="./assets/img/s2.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                  <span class="caption">
+                    <span class="caption-content">
+                        <span class="mb-0"><strong>WEI</strong></span>
+                    </span>
+                  </span>
+                  <img class="img-fluid" src="./assets/img/s1.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            </div>
+          </section>
+          </div>
+        
+          
+   
+  
+      
+              <div style="margin-top:20px" class="col-sm-2">
+            <div class="team-member">
+              <h2>Produits en ventes</h2>
+              <div class="border1">
+              <img class="mx-auto rounded-circle" src="./assets/img/casq.jpg" alt="///">
+              <p><strong>Superbe casquette BDE</strong></p>
+            </div> 
+            <br>  
+            <div class="border1">    
+              <img class="mx-auto rounded-circle" src="./assets/img/casq.jpg" alt="///">
+              <p><strong>Superbe casquette BDE</strong></p>
+              </div>
+              <br>
+              <div class="border1">
+              <img class="mx-auto rounded-circle" src="./assets/img/casq.jpg" alt="///">
+              <p><strong>Superbe casquette BDE</strong></p>   
+              </div>           
+              <hr class="d-sm-none">
+            </div>
+            </div>
+      
+           
+</div>
+</div>
+<div  style="background-color : rgb(0, 0, 0); " class="row col-sm-12">
+<div class="col-sm-12">
+    <div style="padding : 20px;" class="team-member">
+        <h1 style="font-family : fantasy; text-align : center; margin-bottom: 30px;margin-top: 40px; color : white;">NOTRE EQUIPE DE VAINQUEUR</h1>
+      <img class="mx-auto rounded-circle" src="./assets/img/1.jpg" alt="///">
+      <p style="color : white;">Président</p>
+      <img class="mx-auto rounded-circle" src="./assets/img/2.jpg" alt="///">
+  
+      <img class="mx-auto rounded-circle" src="./assets/img/3.jpg" alt="///">
+
+      <img class="mx-auto rounded-circle" src="./assets/img/1.jpg" alt="///">
+
+      <img class="mx-auto rounded-circle" src="./assets/img/2.jpg" alt="///">
+
+
+      </div>
+      
+      </div>
+      </div>
+      
+
+
+</main>
+<!-- <button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('cacceptation', '1', 30);">J'accepte les cookies</button>
+<button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('cacceptation', '0', 30);">Je n'accepte pas les cookies</button>
+-->
+<script>
+    function setCookie(name,value,days) {
+      var d = new Date();
+      d.setTime(d.getTime() + (days*24*60*60*1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = name+"="+value+expires+"; path=/";
+    }
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+
+    function checkCookie() {
+      var user=getCookie("checkcookie");
+      if (user != "0") {
+        alert("Welcome again");
+      } else {
+         user = prompt("Please enter your name:","");
+         if (user != "" && user != null) {
+           setCookie("username", user, 30);
+         }
+      }
+    }
+</script>
+<script>
+  $(document).ready(function () {
+    //Si le cookie a été set
+    if (document.cookie.indexOf("ModalShown=true")<0) {
+        $("#myModal").modal("show");
+        
+    }
+});
+</script> 
+<footer class="footer">
+  <div class="container">
+    <div class="row contents">
+      <div class="col-sm-3">
+        <span>BDE</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Événements</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Espace utilisateur</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Boutique</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+    </div>
+    <div class="row networks">
+      <div class="col-sm-12 text-center">
+        <span>Retrouvez l'intégralité du BDE sur :</span>
+      </div>
+
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-4 network"></div>
+          <div class="col-sm-4 network"></div>
+          <div class="col-sm-4 network"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row mentions">
+      <div class="col-sm-4 mention">
+        <a href="">Politique de Protection des Données Personnelles</a>
+      </div>
+      <div class="col-sm-4 mention">
+        <a href="">Mentions légales</a>
+      </div>
+      <div class="col-sm-4 mention">
+        <a href="">Conditions Générales de Vente</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center credits">
+        <span>&copy; BDE CESI Toulouse</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

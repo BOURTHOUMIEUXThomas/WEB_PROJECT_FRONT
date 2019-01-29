@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Amatic+SC|Bad+Script|Clicker+Script|Dancing+Script|Lobster|Marck+Script|Meddon|Meie+Script|Petit+Formal+Script|Pinyon+Script|Princess+Sofia|Zeyada" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>ProjetWeb</title>
+</head>
+<body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff);">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img style="margin-right : 10px;" src="./assets/img/logobde.png" width="50" alt="">
+    <a style="font-family: 'Lobster', cursive;font-size : x-large;" class="navbar-brand" href="#">BDE Toulouse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boite à idée</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Photos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Profil</a>
+        </li>      
+        <li class="nav-item active dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Evènements
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Weekend d'intégration</a>
+            <a class="dropdown-item" href="#">Weekend Ski</a>
+            <a class="dropdown-item" href="#">AfterWork</a>
+            <a class="dropdown-item" href="#">Soirées</a>
+            <a class="dropdown-item" href="#">Gala</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Remises de diplomes</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boutique</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+    <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Incription</button>
+    <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Se connecter</button>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="container emp-profile">
+        <form method="post">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="profile-img">
+                <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1233964_1493464897567977_712873764154351520_n.jpg?_nc_cat=108&_nc_ht=scontent-cdg2-1.xx&oh=6b761a881c6a92ff5ff56eb8db3ab18d&oe=5CBB9802" alt=""/>
+                <div class="file btn btn-lg btn-primary">
+                  Change Photo
+                  <input type="file" name="file"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="profile-head">
+                <h5>
+                  Thomas BTX
+                </h5>
+                <h6>
+                  Web Developer and Designer
+                </h6>
+                <p class="proile-rating">RANKINGS : <span>5/13</span></p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Scores CESIENS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Modifier"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="profile-work">
+                <p>On me décrit comme :</p>
+                <a href="">Un aventurier</a><br/>
+                <a href="">Un touche à tout</a><br/>
+                <a href="">Un sportif</a>
+                <p>Compétences</p>
+                <a href="">Boostrap</a><br/>
+                <a href="">Boire</a><br/>
+                <a href="">Manger</a><br/>
+                <a href="">Dormir</a><br/>
+                <a href="">Coder</a><br/>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="tab-content profile-tab" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Nom</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>BOURTHOUMIEUX</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Prénom</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Toto l'haricot</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Email</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>thomas.bourthoumieux@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Téléphone</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>06806556966</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Profession</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Web Developer and Designer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>WEI</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>3</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>WES</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>2</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>GALA</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>AfterWork</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>8</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Soirée toulouse</label>
+                    </div>
+                    <div class="col-md-3">
+                      <p>3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </form>           
+  </div>
+</div>
+<article>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" style="width: 40%;">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+          <div class="container" style="width: 60%;">
+           <h2 style="text-align: center;">Créez vous un compte</h2>
+           <label for="uname"><b>Identifiant</b></label>
+           <input type="text" placeholder="Enter votre Identifiant" name="uname" required>
+           <label for="psw"><b>Mot De Passe</b></label>
+           <input type="password" placeholder="Enter votre Mot de passe" name="psw" required>
+           <label for="psw"><b>Retapez le mot de passe</b></label>
+           <input type="password" placeholder="Enter votre Mot de passe" name="psw" required>
+           <label for="uname"><b>Adresse mail</b></label>
+           <input type="text" placeholder="Enter votre adresse mail" name="email" required>
+           <button type="submit">Inscription</button>
+         </div>
+       </form>
+     </div>
+   </article>
+   <article>
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="/action_page.php" style="width: 40%;">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./assets/img/logobde.png" width="100" alt="">
+        </div>
+        <div class="container" style="width: 70%;">
+          <label for="uname"><b>Identifiant</b></label>
+          <input type="text" placeholder="Enter votre Identifiant" name="uname" required>
+          <label for="psw"><b>Mot De Passe</b></label>
+          <input type="password" placeholder="Enter votre Mot de passe" name="psw" required>
+
+          <button type="submit">Se connecter</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Se rapeller de moi
+          </label>
+        </div>
+        <div class="container">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Sortir</button>
+          <span class="psw"><a href="#">Mot de passe oublié?</a></span>
+        </div>
+      </form>
+    </div>
+  </article>
+</main>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="row contents">
+      <div class="col-sm-3">
+        <span>BDE</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Événements</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Espace utilisateur</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+      <div class="col-sm-3">
+        <span>Boutique</span><br>
+        <span class="text-muted">Place content here.</span>
+      </div>
+    </div>
+    <div class="row networks">
+      <div class="col-sm-12 text-center">
+        <span>Retrouvez l'intégralité du BDE sur :</span>
+      </div>
+
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-4 network"></div>
+          <div class="col-sm-4 network"></div>
+          <div class="col-sm-4 network"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row mentions">
+      <div class="col-sm-4 mention">
+        <a href="">Politique de Protection des Données Personnelles</a>
+      </div>
+      <div class="col-sm-4 mention">
+        <a href="">Mentions légales</a>
+      </div>
+      <div class="col-sm-4 mention">
+        <a href="">Conditions Générales de Vente</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center credits">
+        <span>&copy; BDE CESI Toulouse</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>

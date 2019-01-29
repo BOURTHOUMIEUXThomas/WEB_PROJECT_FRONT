@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/img/sapple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+<link rel="manifest" href="./assets/img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Amatic+SC|Bad+Script|Clicker+Script|Dancing+Script|Lobster|Marck+Script|Meddon|Meie+Script|Petit+Formal+Script|Pinyon+Script|Princess+Sofia|Zeyada" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="404.css">
+	<title>ProjetWeb</title>
+</head>
+<body>    
+      <!-- Error Page -->
+            <div class="error">
+                <div class="container-floud">
+                    <div class="col-xs-12 ground-color text-center">
+                        <div class="container-error-404">
+                            <div class="clip"><div class="shadow"><span class="digit thirdDigit"></span></div></div>
+                            <div class="clip"><div class="shadow"><span class="digit secondDigit"></span></div></div>
+                            <div class="clip"><div class="shadow"><span class="digit firstDigit"></span></div></div>
+                            <div class="msg">OH!<span class="triangle"></span></div>
+                        </div>
+                        <h2 class="h1">Désolé ! La page n'a pas été trouvée ou a été supprimée</h2>
+                    </div>
+                </div>
+            </div>
+        <!-- Error Page -->
+<script>
+        function randomNum()
+        {
+            "use strict";
+            return Math.floor(Math.random() * 9)+1;
+        }
+            var loop1,loop2,loop3,time=30, i=0, number, selector3 = document.querySelector('.thirdDigit'), selector2 = document.querySelector('.secondDigit'),
+                selector1 = document.querySelector('.firstDigit');
+            loop3 = setInterval(function()
+            {
+              "use strict";
+                if(i > 40)
+                {
+                    clearInterval(loop3);
+                    selector3.textContent = 4;
+                }else
+                {
+                    selector3.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+            loop2 = setInterval(function()
+            {
+              "use strict";
+                if(i > 80)
+                {
+                    clearInterval(loop2);
+                    selector2.textContent = 0;
+                }else
+                {
+                    selector2.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+            loop1 = setInterval(function()
+            {
+              "use strict";
+                if(i > 100)
+                {
+                    clearInterval(loop1);
+                    selector1.textContent = 4;
+                }else
+                {
+                    selector1.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+</script>
+</body>
+</html>
